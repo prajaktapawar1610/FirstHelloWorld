@@ -2,7 +2,16 @@ name: CICD
 
 on:
   workflow_dispatch:
-
+env:
+  AWS_REGION: us-east-1
+  ECR_REPOSITORY: helloworld
+  ECS_SERVICE: HelloWorld
+  ECS_CLUSTER: HelloWorld
+  ECS_TASK_DEFINITION: aws/task-definition.json
+  CONTAINER_NAME: HelloWorld
+  
+permissions:
+  contents: read
 jobs:
   build:
 
