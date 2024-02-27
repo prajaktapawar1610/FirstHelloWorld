@@ -27,6 +27,6 @@ jobs:
     - uses: actions/upload-artifact@v1
       with:
        name: demo-0.0.1-SNAPSHOT
-       path: Prajakta/
+       path: target/
 
   
