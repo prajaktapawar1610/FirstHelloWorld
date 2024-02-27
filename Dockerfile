@@ -1,4 +1,5 @@
 FROM eclipse-temurin:17
+WORKDIR /home
 VOLUME /tmp
 EXPOSE 8080
 ARG JAR_FILE = target/demo-0.0.1-SNAPSHOT.jar
