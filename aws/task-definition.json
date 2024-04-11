@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:048678847173:task-definition/HelloWorld:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-2:048678847173:task-definition/HelloWorld:1",
     "containerDefinitions": [
         {
             "name": "HelloWorld",
-            "image": "048678847173.dkr.ecr.us-east-1.amazonaws.com/helloworld",
+            "image": "048678847173.dkr.ecr.us-east-2.amazonaws.com/helloworld",
             "cpu": 0,
             "portMappings": [
                 {
@@ -25,7 +25,7 @@
                 "options": {
                     "awslogs-create-group": "true",
                     "awslogs-group": "/ecs/HelloWorld",
-                    "awslogs-region": "us-east-1",
+                    "awslogs-region": "us-east-2",
                     "awslogs-stream-prefix": "ecs"
                 },
                 "secretOptions": []
